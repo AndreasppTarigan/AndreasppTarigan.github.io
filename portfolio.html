@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Andreas Tarigan - Graphic Designer Portfolio</title>
+  <title>Andreas Tarigan - Portofolio Desainer Grafis</title>
   <meta name="description" content="Portofolio desain grafis Andreas Tarigan. Menampilkan karya dalam branding, editorial, produk, dan lainnya.">
   <meta name="keywords" content="desain grafis, graphic design, branding, editorial, portfolio, Andreas Tarigan">
 
@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body class="portfolio-details-page">
+<body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -39,12 +39,29 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="resume.html">CV</a></li>
+          <li><a href="services.html">Layanan</a></li>
+          <li><a href="portfolio.html">Portofolio</a></li>
+          <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Submenu 1</a></li>
+              <li class="dropdown"><a href="#"><span>Submenu Dalam</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Submenu Dalam 1</a></li>
+                  <li><a href="#">Submenu Dalam 2</a></li>
+                  <li><a href="#">Submenu Dalam 3</a></li>
+                  <li><a href="#">Submenu Dalam 4</a></li>
+                  <li><a href="#">Submenu Dalam 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Submenu 2</a></li>
+              <li><a href="#">Submenu 3</a></li>
+              <li><a href="#">Submenu 4</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Kontak</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -53,83 +70,23 @@
   </header>
 
   <main class="main">
-    <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>My Works</h1>
-              <p class="mb-0">Kumpulan karya desain grafis terbaik saya mulai dari branding, editorial, produk, hingga digital assets.</p>
-            </div>
-          </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="Background" data-aos="fade-in">
+
+      <div class="container" data-aos="zoom-out" data-aos-delay="100">
+        <h2>Andreas Tarigan</h2>
+        <p>Saya seorang <span class="typed" data-typed-items="Desainer Grafis, Freelancer, Pembuat Identitas Visual"></span><span class="typed-cursor typed-cursor--blink"></span></p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/andreastrg_/" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/andreas-tarigan" target="_blank"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
-          </ol>
-        </div>
-      </nav>
-    </div>
 
-    <section id="portfolio-details" class="portfolio-details section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
+    </section><!-- /Hero Section -->
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": { "delay": 5000 },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/logo-andre.webp" alt="Logo Design for Andre Studio">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/social-post.webp" alt="Social Media Design">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/editorial-cover.webp" alt="Editorial Design">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/illustration.webp" alt="Illustration Work">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Branding & Visual Design</li>
-                <li><strong>Client</strong>: Various Clients</li>
-                <li><strong>Project date</strong>: March 2025</li>
-                <li><strong>Project URL</strong>: <a href="https://www.instagram.com/andreastrg_/">instagram.com/andreastrg_/</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Karya Terpilih dalam Desain Grafis</h2>
-              <p>Berikut adalah kumpulan proyek desain grafis terbaik saya, mulai dari logo dan identitas visual, editorial, ilustrasi, hingga konten digital untuk media sosial. Setiap proyek dirancang dengan fokus pada pesan visual yang kuat dan estetika yang fungsional.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer id="footer" class="footer dark-background">
@@ -137,21 +94,24 @@
       <h3 class="sitename">Andreas Tarigan</h3>
       <p>Desainer grafis yang fokus pada branding dan visual storytelling. Terbuka untuk kerja sama dan kolaborasi kreatif.</p>
       <div class="social-links d-flex justify-content-center">
-        <a href="https://www.instagram.com/andreastrg_/"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/andreas-tarigan"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/andreastrg_/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/andreas-tarigan" target="_blank"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="container">
         <div class="copyright">
-          <span>&copy; 2025</span> <strong class="px-1 sitename">Andreas Tarigan</strong> <span>All Rights Reserved</span>
+          <span>&copy; 2025</span> <strong class="px-1 sitename">Andreas Tarigan</strong> <span>Hak Cipta Dilindungi</span>
         </div>
         <div class="credits">
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Dirancang oleh <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
@@ -168,6 +128,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
